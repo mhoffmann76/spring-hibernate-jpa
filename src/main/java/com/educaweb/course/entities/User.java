@@ -1,16 +1,20 @@
 package com.educaweb.course.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+
+import java.io.Serializable;
 
 
-@Getter @Setter @AllArgsConstructor @NoArgsConstructor
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode
 @Entity
-@Table(name="tb_user")
-public class User {
+@Table(name = "tb_user")
+public class User implements Serializable {
+    private static final long seriaLVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
