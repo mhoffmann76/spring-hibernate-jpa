@@ -14,13 +14,10 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/users")
 
-
 public class UserResource {
 
     @Autowired
     private UserService service;
-
-
 
     @GetMapping
     public ResponseEntity<List<User>> findAll() {
@@ -34,10 +31,6 @@ public class UserResource {
         User obj = service.findById(id);
         return ResponseEntity.ok().body(obj);
 
-
     }
 
-
 }
-
-
