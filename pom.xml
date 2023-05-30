@@ -64,6 +64,16 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+        <dependency>
+            <groupId>io.github.dbstarll.parent</groupId>
+            <artifactId>PARENT</artifactId>
+            <version>1.0</version>
+        </dependency>
+		<dependency>
+			<groupId>io.github.dbstarll.parent</groupId>
+			<artifactId>PARENT</artifactId>
+			<version>1.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
